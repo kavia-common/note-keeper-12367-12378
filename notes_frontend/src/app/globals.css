@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Theme variables set default fallback; overridden inline in layout.tsx */
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #f1f5f9;
+  --color-accent: #f59e42;
+  --color-bg: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: #0f172a; /* slate-900 */
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Utilities */
+.container {
+  max-width: 72rem; /* 1152px */
+  margin-left: auto;
+  margin-right: auto;
+}
